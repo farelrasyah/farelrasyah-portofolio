@@ -12,7 +12,15 @@ const firebaseConfig = {
   databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DB_URL
 };
 
-const firebase = initializeApp(firebaseConfig);
-const firestore = getFirestore(firebase);
+// Only initialize Firebase if we have valid config
+const hasValidConfig = firebaseConfig.apiKey && firebaseConfig.projectId;
+
+let firebase;
+let firestore;
+
+if (hasValidConfig) {
+  firebase = initializeApp(firebaseConfig);
+  firestore = getFirestore(firebase);
+}
 
 export { firebase, firestore };
