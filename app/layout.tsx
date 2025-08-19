@@ -52,7 +52,7 @@ const RootLayout = async ({
         src="https://cloud.umami.is/script.js"
         data-website-id="91c868c5-2a89-4a1d-b292-56c40ea30137"
 
-        // data-domains="satriabahari.site"
+        // data-domains="farelrasyah.site"
         // data-website-id="8e2c9f27-a12b-48ca-8130-808ebe377aca"
       ></Script>
       <body className={onestSans.className}>
