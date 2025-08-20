@@ -5,7 +5,7 @@ export const CAREERS: CareerProps[] = [
     position: "Backend Golang Developer",
     company: "Pt. Affan Technology Indonesia (Parto.id)",
     logo: "/images/careers/parto-id.png",
-    location: "Jambi, Indonesia 🇮🇩",
+    location: "Malang, Indonesia 🇮🇩",
     location_type: "Onsite",
     type: "Internship",
     start_date: "2025-07",
@@ -40,9 +40,9 @@ export const CAREERS: CareerProps[] = [
   {
     position: "Head of Technology in the Research and Technology Division",
     company:
-      "Himpunan Mahasiswa Sistem Informasi Universitas Jambi (HIMASI UNJA)",
+      "Himpunan Mahasiswa Sistem Informasi Universitas Malang (HIMASI UNJA)",
     logo: "/images/careers/himasi-unja.jpeg",
-    location: "Jambi, Indonesia 🇮🇩",
+    location: "Malang, Indonesia 🇮🇩",
     location_type: "Onsite",
     type: "Part-time",
     start_date: "2024-12",
