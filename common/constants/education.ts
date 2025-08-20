@@ -2,13 +2,13 @@ import { EducationProps } from "../types/education";
 
 export const EDUCATION: EducationProps[] = [
   {
-    school: "Universitas Malang",
-    major: "Information Systems, (S.Kom)",
-    logo: "/images/education/unja.png",
+    school: "SMKN 4 Malang",
+    major: "Software Engineering",
+    logo: "/images/education/grafika.png",
     location: "Malang, Indonesia 🇮🇩",
-    degree: "Bachelor's degree",
-    start_year: 2022,
+    degree: "Vocational High School",
+    start_year: 2023,
     end_year: 2026,
-    link: "https://www.unja.ac.id",
+    link: "https://smkn4malang.sch.id/",
   },
 ];

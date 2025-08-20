@@ -17,9 +17,9 @@
     "title": "About",
     "description": "A brief introduction to who I am.",
     "resume": {
-      "paragraf_1": "Hello there! Thank you for visiting my personal website. I'm Farel Rasyah, a student majoring in Information Systems at the University of Malang. I'm a Fullstack Developer with a passion for building impactful software products. My stack includes modern frontend technologies like Next.js, TypeScript, and Tailwind CSS, as well as backend development using Golang. For mobile applications, I develop native Android apps using Kotlin.",
+      "paragraf_1": "Hello there! Thank you for visiting my personal website. My name is Farel Rasyah, a student at SMKN 4 Malang with a strong passion for technology and software development. I am a Fullstack Developer who enjoys building impactful and meaningful digital products. My technology stack includes mobile development with Flutter and Dart, modern frontend development using Next.js, TypeScript, and Tailwind CSS, as well as backend development with NestJS and Golang. In addition, I often create productivity tools such as Chrome extensions using JavaScript.",
 
-      "paragraf_2": "I enjoy creating solutions that are both user-friendly and performant. Whether it's building intuitive interfaces or architecting backend services, I aim to bring efficiency and clarity into every layer of the application. I’m a fast learner who thrives in dynamic environments, and I enjoy solving complex problems collaboratively.",
+      "paragraf_2": "I enjoy creating user-friendly and high-performance solutions. Whether it’s developing mobile applications, building interactive web interfaces, or designing robust backend services, I always strive to bring efficiency and clarity to every layer of the application.",
 
       "paragraf_3": "I believe that great communication and team synergy are key to success in software development. My experience has shaped my technical and analytical skills, as well as my leadership qualities. I'm always excited to work in teams, learn from others, and contribute to impactful projects.",
 
