@@ -23,10 +23,10 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
     >
       <Image
         src={"/images/profile.jpg"}
-        width={expandMenu ? 80 : imageSize * 0.9}
-        height={expandMenu ? 80 : imageSize * 0.9}
+        width={expandMenu ? 120 : imageSize * 1.2}
+        height={expandMenu ? 120 : imageSize * 1.2}
         alt="Farel Rasyah"
-        className="border-2 border-neutral-400 dark:border-neutral-600 lg:hover:scale-105"
+        className="border-2 border-neutral-400 dark:border-neutral-600 lg:hover:scale-105 object-cover"
         rounded="rounded-full"
       />
 

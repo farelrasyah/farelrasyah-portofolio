@@ -19,10 +19,12 @@ const Image = (props: ImageProps) => {
         isLoading ? "animate-pulse" : "",
         rounded,
       )}
+      style={rounded?.includes('rounded-full') ? { aspectRatio: '1/1' } : undefined}
     >
       <NextImage
         className={clsx(
           "duration-700 ease-in-out",
+          rounded?.includes('rounded-full') ? "w-full h-full" : "",
           isLoading
             ? "scale-[1.02] blur-xl grayscale"
             : "scale-100 blur-0 grayscale-0",
