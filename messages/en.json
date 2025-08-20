@@ -3,7 +3,7 @@
     "intro": "Hi, I'm Farel Rasyah",
     "location": "Based in Malang, Indonesia 🇮🇩",
     "location_type": "Onsite",
-    "resume": "Experienced and passionate Fullstack Developer specializing in building scalable and efficient digital solutions. On the frontend, I work with Next.js, TypeScript, and Tailwind CSS to craft responsive and accessible user interfaces. On the backend, I develop robust services using Golang, and for mobile, I build native Android apps with Kotlin. I’m a collaborative and detail-oriented engineer committed to delivering well-structured, high-performance applications across platforms.",
+    "resume": "Experienced and passionate Fullstack Developer specializing in building scalable and efficient digital solutions. I develop mobile applications using Flutter and Dart, while on the web frontend I rely on Next.js, TypeScript, and Tailwind CSS to deliver responsive and inclusive user interfaces. On the backend, I have experience with NestJS and Golang to build robust and scalable systems. I also frequently create productivity tools, such as Chrome extensions built with JavaScript, to address specific needs. I’m a collaborative and detail-oriented engineer committed to delivering well-structured, high-performance applications across platforms.",
     "skills": {
       "title": "Skills",
       "sub_title": "My professional skills."

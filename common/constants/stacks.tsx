@@ -34,6 +34,8 @@ import {
   SiJest,
   SiDocker,
   SiKotlin,
+  SiFlutter,
+  SiDart,
 } from "react-icons/si";
 
 export type SkillProps = {
@@ -190,6 +192,18 @@ export const STACKS: SkillProps = {
     icon: <SiKotlin size={iconSize} />,
     background: "bg-violet-600",
     color: "text-violet-600",
+    isActive: true,
+  },
+  Flutter: {
+    icon: <SiFlutter size={iconSize} />,
+    background: "bg-blue-400",
+    color: "text-blue-400",
+    isActive: true,
+  },
+  Dart: {
+    icon: <SiDart size={iconSize} />,
+    background: "bg-blue-600",
+    color: "text-blue-600",
     isActive: true,
   },
   PostgreSql: {
