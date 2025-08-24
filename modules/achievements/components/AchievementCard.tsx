@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { format, parseISO } from "date-fns";
+import { format, parseISO, isValid } from "date-fns";
 import { HiOutlineArrowSmRight as ViewIcon } from "react-icons/hi";
 
 import Image from "@/common/components/elements/Image";
@@ -16,17 +16,62 @@ const AchievementCard = ({
   image,
   url_credential,
 }: AchievementItem) => {
-  const issueDate = format(parseISO(issue_date), "MMMM yyyy");
+  // Safe date parsing with fallback
+  const formatIssueDate = (dateString?: string): string => {
+    if (!dateString) return "Date not available";
+    
+    try {
+      const parsedDate = parseISO(dateString);
+      if (isValid(parsedDate)) {
+        return format(parsedDate, "MMMM yyyy");
+      }
+      return "Invalid date";
+    } catch (error) {
+      console.warn("Date parsing error:", error);
+      return "Date not available";
+    }
+  };
+
+  const issueDate = formatIssueDate(issue_date);
+  
+  // Safe fallbacks for required props
+  const safeName = name || "Untitled Achievement";
+  const safeOrganization = issuing_organization || "Unknown Organization";
+  
+  // Convert absolute path to relative path for Next.js Image
+  const normalizeImagePath = (imagePath?: string): string => {
+    if (!imagePath) return "/images/default-certificate.svg";
+    
+    // If it's already a relative path or URL, use as is
+    if (imagePath.startsWith("/") || imagePath.startsWith("http")) {
+      return imagePath;
+    }
+    
+    // If it's an absolute Windows path, convert to relative
+    if (imagePath.includes("public\\images") || imagePath.includes("public/images")) {
+      const pathParts = imagePath.split(/[\\\/]/);
+      const publicIndex = pathParts.findIndex(part => part === "public");
+      if (publicIndex !== -1) {
+        return "/" + pathParts.slice(publicIndex + 1).join("/");
+      }
+    }
+    
+    // Default fallback
+    return "/images/default-certificate.svg";
+  };
+  
+  const safeImage = normalizeImagePath(image);
+  const safeUrl = url_credential || "#";
 
   const t = useTranslations("AchievementsPage");
 
   return (
-    <Link href={url_credential} className="flex h-full" target="_blank">
+    <Link href={safeUrl} className="flex h-full" target="_blank">
       <SpotlightCard className="group flex h-full flex-col overflow-hidden">
         <div className="relative">
           <Image
-            src={image}
-            alt={name}
+            src={safeImage}
+            alt={safeName}
             width={500}
             height={200}
             className="min-h-[180px] w-full rounded-t-xl object-cover md:h-[170px]"
@@ -40,9 +85,9 @@ const AchievementCard = ({
           {credential_id && (
             <p className="text-sm text-neutral-500">{credential_id}</p>
           )}
-          <p className="text-neutral-900 dark:text-neutral-300">{name}</p>
+          <p className="text-neutral-900 dark:text-neutral-300">{safeName}</p>
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
-            {issuing_organization}
+            {safeOrganization}
           </p>
           <div className="space-y-1">
             <p className="text-xs text-neutral-400 dark:text-neutral-500 ">

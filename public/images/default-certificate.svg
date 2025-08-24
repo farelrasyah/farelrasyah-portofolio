@@ -1,0 +1,9 @@
+<!-- Placeholder SVG untuk default certificate -->
+<svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="200" fill="#f3f4f6"/>
+  <rect x="20" y="20" width="460" height="160" fill="white" stroke="#e5e7eb" stroke-width="2"/>
+  <circle cx="250" cy="60" r="15" fill="#3b82f6"/>
+  <text x="250" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#374151">Certificate</text>
+  <text x="250" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Achievement Badge</text>
+  <rect x="200" y="130" width="100" height="20" fill="#e5e7eb" rx="5"/>
+</svg>
