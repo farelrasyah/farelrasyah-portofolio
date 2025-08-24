@@ -34,9 +34,10 @@
       "sub_title": "My educational journey."
     },
     "video": {
-      "title": "My Portfolio Video",
-      "description": "A showcase of my work and journey",
-      "watch_on_youtube": "Watch on YouTube"
+      "title": "Portfolio Showcase",
+      "description": "Watch my latest projects and development journey",
+      "watch_on_youtube": "Watch on YouTube",
+      "subtitle": "HD quality showcase available"
     },
     "resume_download_button": "Download Resume",
     "portfolio_download_button": "Download Portfolio"

@@ -15,6 +15,13 @@ const config: Config = {
         dark: "#121212",
         light: "#fafafa",
       },
+      borderWidth: {
+        '3': '3px',
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -12px rgba(0, 0, 0, 0.25)',
+        '4xl': '0 45px 100px -15px rgba(0, 0, 0, 0.3)',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
