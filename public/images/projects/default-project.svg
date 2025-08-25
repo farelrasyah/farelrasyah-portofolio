@@ -1,0 +1,19 @@
+<!-- Placeholder SVG untuk default project -->
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="#f8fafc"/>
+  <rect x="20" y="20" width="460" height="260" fill="white" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+  
+  <!-- Code icon -->
+  <rect x="40" y="40" width="420" height="20" fill="#e2e8f0" rx="4"/>
+  <rect x="40" y="70" width="320" height="8" fill="#e2e8f0" rx="4"/>
+  <rect x="40" y="100" width="380" height="8" fill="#e2e8f0" rx="4"/>
+  
+  <!-- Project folder icon -->
+  <rect x="200" y="140" width="100" height="80" fill="#3b82f6" rx="8" opacity="0.1"/>
+  <rect x="210" y="150" width="80" height="8" fill="#3b82f6" rx="4"/>
+  <rect x="210" y="170" width="60" height="6" fill="#6b7280" rx="3"/>
+  <rect x="210" y="185" width="70" height="6" fill="#6b7280" rx="3"/>
+  
+  <text x="250" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#64748b">Project</text>
+  <text x="250" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#94a3b8">Coming Soon</text>
+</svg>

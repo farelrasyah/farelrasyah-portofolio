@@ -6,6 +6,7 @@ import { HiOutlineArrowSmRight as ViewIcon } from "react-icons/hi";
 import Image from "@/common/components/elements/Image";
 import SpotlightCard from "@/common/components/elements/SpotlightCard";
 import { AchievementItem } from "@/common/types/achievements";
+import { normalizeImagePath } from "@/common/utils/image";
 
 const AchievementCard = ({
   credential_id,
@@ -37,29 +38,6 @@ const AchievementCard = ({
   // Safe fallbacks for required props
   const safeName = name || "Untitled Achievement";
   const safeOrganization = issuing_organization || "Unknown Organization";
-  
-  // Convert absolute path to relative path for Next.js Image
-  const normalizeImagePath = (imagePath?: string): string => {
-    if (!imagePath) return "/images/default-certificate.svg";
-    
-    // If it's already a relative path or URL, use as is
-    if (imagePath.startsWith("/") || imagePath.startsWith("http")) {
-      return imagePath;
-    }
-    
-    // If it's an absolute Windows path, convert to relative
-    if (imagePath.includes("public\\images") || imagePath.includes("public/images")) {
-      const pathParts = imagePath.split(/[\\\/]/);
-      const publicIndex = pathParts.findIndex(part => part === "public");
-      if (publicIndex !== -1) {
-        return "/" + pathParts.slice(publicIndex + 1).join("/");
-      }
-    }
-    
-    // Default fallback
-    return "/images/default-certificate.svg";
-  };
-  
   const safeImage = normalizeImagePath(image);
   const safeUrl = url_credential || "#";
 

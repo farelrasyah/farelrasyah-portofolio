@@ -6,6 +6,7 @@ import Folder from "@/common/components/elements/Folder";
 import Image from "@/common/components/elements/Image";
 import { AchievementItem } from "@/common/types/achievements";
 import { fetcher } from "@/services/fetcher";
+import { normalizeImagePath } from "@/common/utils/image";
 
 const AchievementFolder = () => {
   const { data } = useSWR("/api/achievements", fetcher);
@@ -19,7 +20,7 @@ const AchievementFolder = () => {
     filteredAchievements?.map((item: AchievementItem) => (
       <Image
         key={item.id}
-        src={item.image || "/images/default-certificate.svg"}
+        src={normalizeImagePath(item.image)}
         alt={item.name}
         width={200}
         height={100}
