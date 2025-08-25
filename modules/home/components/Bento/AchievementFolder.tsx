@@ -19,7 +19,7 @@ const AchievementFolder = () => {
     filteredAchievements?.map((item: AchievementItem) => (
       <Image
         key={item.id}
-        src={item.image}
+        src={item.image || "/images/default-certificate.svg"}
         alt={item.name}
         width={200}
         height={100}
